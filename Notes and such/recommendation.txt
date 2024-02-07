@@ -1,0 +1,38 @@
+Reccomendations:
+
+To configure recommended extentions: command shift P - configure recommended extentions - use esbenp.prettier-vscode - [or other extentions] "extention id" and paste in JSON recommendations file array - can also disable per workspace.
+
+Something that could be looked into later - code Emmet as a resource for better HTML and CSS - these is an "emmet cheatsheet" as well as a faster with emmet free course - just 20 and 21 in the video... command line tools look helpful.\
+
+Josh - Notes about topic identification - for the 'subject classification' part of the project:
+
+"How to use BERTopic - Machine Learning Assisted Topic Modeling in Python"
+- video link: https://www.youtube.com/watch?v=v3SePt3fr9g&t=670s 
+
+Since this uses a different library, following the ideas presented in this video would cement us into having two different AI models trained, one for subject classification and the other for connotation - not that that's a bad thing but it's a reality
+
+The main page for the topic modeling technique is found here: https://maartengr.github.io/BERTopic/index.html 
+According to this page, the model, "leverages transformers and c-TF-IDF to create dense clusters allowing for easily interpretable topics whilst keeping important words in the topic descriptions." - both topics covered by fastai 
+
+Here are some things about BERT, according to the author:
+"Finds clusters within a large corpus and groups those documents together automatically" 
+Has some advantages over traditional latent derelict allocation (LDA) topic modeling (the original): 
+- allows you to embed your documents before finding patterns in them as well as the automatic generation of number of topics
+- easy to install with pip
+- works well with a lower number of documents 
+- doesn't require any pre-processing of the data - such as lemmetization. More complex model allows the usage of would be 'stop words' to provide greater context and improve the accuracy of the model
+
+To interact and display the data, recommendations PANDAS -- I'm partially famililar and it syncs well with jupyter notebooks 
+
+For most of the rest of the video, the author demonstrates an example as followed in followAlong.ipynb
+
+In this example, the author examines a dataset involving details of victums of human rights violations (digital humanities dataset) with the goal of "using BERTopic to find and isolate patterns amongst the different descriptions"
+
+The author descibes embedding as, "a way of taking a document which is a string and converting it into a numerical representation... with BERT, it embeds a document with a sentence transformer. This means the numerical representation is a very deep semantic representation of that document which can improve the way the documents are clustered in a topic modeling approach."
+
+He links to this article: "A Topic Modeling Comparison Between LDA, NMF, Top2Vec, and BERTopic to Demystify Twitter Posts" - https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9120935/ which compares between different topic models with an indepth analysis.
+- helpful to read if interested more in how BERTopic model works, and how it compares to other approahces
+- Table 5 has a breakdown of advantages and disadvantages of differnt topic modeling approaches, according to the authors
+
+In summary, I don't think this is exactly what we want to do, but it is really cool regardless and I think we can use this as a way to explore our input data and hopefully get something out of it. I am alright with tweaking our original product plan to do so, but I understand if not.
+

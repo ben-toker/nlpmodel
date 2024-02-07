@@ -1,0 +1,31 @@
+
+Other libraries and their use cases.
+
+pytorch:
+ - mainly used to build neural networks based on tensors (any dimension of an array type structure)
+ - Relatively easier to use when compared to tensorflow or other comparable libraries
+    How it's relevant:
+        - For our tasks, we will most likely need to employ the use of popular transformer NLP models like BERT, RoBERTa, or GPT.
+        PyTorch supports these pre-trained models and enables relatively easy use of retraining them.
+        - PyTorch has efficient GPU acceleration, and has shown some support for apple hardware: https://developer.apple.com/metal/pytorch/
+
+tensorflow:
+    - harder to use than pytorch
+    - TensorFlow Mac has support for apple silicon. 
+
+sklearn:
+    - nothing too special; seems to be highly ML focused and has a wide range of algorithms
+    for training a model on a dataset. Seems like fast-ai should be able to do these things apart from 
+    some methods that sklearn has (since it was used in the fast-ai videos, I'm assuming that there are some special cases
+    where this can come in handy)
+    
+
+BERTopic, WikiText103, and topic modeling
+
+BERTopic is a topic modeling library; it's meant to extract coherent topic from large datasets. 
+WikiText103 is a LLM dataset built on wikipedia. 
+
+> How do we combine them?
+    - The main idea is that we use a transformer model like BERT or RoBERTa and pre-train them on the WikiText103 dataset. 
+        - My understanding is that this can be possible via pytorch or fast-ai, or a combination of the two.
+    - We then use BERTopic to extract salient topics from the data set that we can use to build something akin to document-term matrix. 
