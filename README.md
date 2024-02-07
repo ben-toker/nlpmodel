@@ -4,7 +4,7 @@ This project involves the implementation of transformer models made available th
 
 Contributors: Josh Dawson, Ezra Crowe, Ben Toker
 
-## Installation and Set Up
+## Installation and Setup
 ***
 Python is the main language used in this project. To install the required dependencies use pip as shown below.
 ```
@@ -14,4 +14,6 @@ $ pip install -r requirements.txt
 
 To use the trained models, you will need to download them from [Google Drive](https://drive.google.com/drive/folders/1CwxtrDH2olbzOznYaLuzfGEmLP26scT_?usp=sharing), as GitHub cannot store these large files here. 
 
-
+# Classification Setup
+Download the "*Classification_Model*" folder from the google drive and place it inside the repository folder. 
+Now run the *classifyinput.py* script. Now you can demo any input you want! 
