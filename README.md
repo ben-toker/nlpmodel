@@ -1,6 +1,6 @@
-# WinterTerm2024-NLPModel
+# Winter Term 2024 Classification and Sentiment Analysis model 
 ***
-This repo is for the implementation of an already built NLP Model. We want to train a model that will take in a coherent passage and return the subject of the passage and its average connotation (a number bounded between -1 and 1).  We plan to achieve this through topic identification and sentiment classification. This collaborative project will also serve as an introduction to a wide variety of ML and NLP topics.
+This project involves the implementation of transformer models made available through the fastai and Hugging Face transformers libraries. We wanted to train a model that will take in a coherent passage and return the subject of the passage and its average connotation (a number bounded between -1 and 1).  We achieved this through text categorization datasets and sentiment classification. This collaborative project also served as an introduction to a wide variety of ML and NLP topics.
 
 Contributors: Josh Dawson, Ezra Crowe, Ben Toker
 
@@ -11,5 +11,7 @@ Python is the main language used in this project. To install the required depend
 $ cd WinterTerm2024-NLPModel
 $ pip install -r requirements.txt
 ```
+
+To use the trained models, you will need to download them from [Google Drive](https://drive.google.com/drive/folders/1CwxtrDH2olbzOznYaLuzfGEmLP26scT_?usp=sharing), as GitHub cannot store these large files here. 
 
 
