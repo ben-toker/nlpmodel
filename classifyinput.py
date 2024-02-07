@@ -12,7 +12,7 @@ with open(file_path, 'r') as f:
 id_to_label = {id: label for label, id in label_to_id.items()}
 
 # Load model and tokenizer
-model_path = '/Users/tenboker/Desktop/Code Shtuff/NLPschtuff/WinterTerm2024-NLPModel/Classification_Model'
+model_path = './Classification_Model'
 tokenizer = AutoTokenizer.from_pretrained(model_path)
 model = AutoModelForSequenceClassification.from_pretrained(model_path)
 
