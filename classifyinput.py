@@ -5,7 +5,7 @@ from transformers import AutoModelForSequenceClassification, AutoTokenizer
 
 # Load the label_to_id mapping
 
-file_path = './Classification_Model/label_to_id.json'
+file_path = './label_to_id.json'
 
 with open(file_path, 'r') as f:
     label_to_id = json.load(f)
